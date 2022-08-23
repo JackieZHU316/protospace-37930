@@ -11,10 +11,9 @@ class CommentsController < ApplicationController
       redirect_to "/prototypes/#{params[:prototype_id]}"
     else
       @prototype = @comment.prototype
-      # @comments = @prototype.comments
+      @comments = @prototype.comments
       render "prototypes/show"
-
-
+      # render "/prototypes/#{params[:prototype_id]}"
     end
   end
 
