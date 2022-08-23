@@ -9,9 +9,9 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
 
       t.string :name, null: false, default: ""
       
-      t.text :profile, null: false, default: ""
-      t.text :occupation, null: false, default: ""
-      t.text :position, null: false, default: ""
+      t.string :profile, null: false, default: ""
+      t.string :occupation, null: false, default: ""
+      t.string :position, null: false, default: ""
 
       # t.text :profile, null: false, default: ""
       # t.text :occupation, null: false, default: ""
